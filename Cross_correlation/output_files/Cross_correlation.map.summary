@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Jun 21 15:15:08 2020
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : Cross_correlation
+Top-level Entity Name : Cross_correlation
+Family : Cyclone IV E
+Total logic elements : 122
+    Total combinational functions : 110
+    Dedicated logic registers : 55
+Total registers : 55
+Total pins : 38
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

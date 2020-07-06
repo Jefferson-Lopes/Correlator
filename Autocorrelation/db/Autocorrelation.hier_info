@@ -1,0 +1,215 @@
+|Autocorrelation
+clk_out <= shift_register:inst1.clk_out
+in => shift_register:inst1.in
+clk => shift_register:inst1.clk
+display_0[0] <= decoder:inst3.display[0]
+display_0[1] <= decoder:inst3.display[1]
+display_0[2] <= decoder:inst3.display[2]
+display_0[3] <= decoder:inst3.display[3]
+display_0[4] <= decoder:inst3.display[4]
+display_0[5] <= decoder:inst3.display[5]
+display_0[6] <= decoder:inst3.display[6]
+display_1[0] <= decoder:inst4.display[0]
+display_1[1] <= decoder:inst4.display[1]
+display_1[2] <= decoder:inst4.display[2]
+display_1[3] <= decoder:inst4.display[3]
+display_1[4] <= decoder:inst4.display[4]
+display_1[5] <= decoder:inst4.display[5]
+display_1[6] <= decoder:inst4.display[6]
+display_2[0] <= decoder:inst5.display[0]
+display_2[1] <= decoder:inst5.display[1]
+display_2[2] <= decoder:inst5.display[2]
+display_2[3] <= decoder:inst5.display[3]
+display_2[4] <= decoder:inst5.display[4]
+display_2[5] <= decoder:inst5.display[5]
+display_2[6] <= decoder:inst5.display[6]
+display_3[0] <= decoder:inst6.display[0]
+display_3[1] <= decoder:inst6.display[1]
+display_3[2] <= decoder:inst6.display[2]
+display_3[3] <= decoder:inst6.display[3]
+display_3[4] <= decoder:inst6.display[4]
+display_3[5] <= decoder:inst6.display[5]
+display_3[6] <= decoder:inst6.display[6]
+display_4[0] <= decoder:inst7.display[0]
+display_4[1] <= decoder:inst7.display[1]
+display_4[2] <= decoder:inst7.display[2]
+display_4[3] <= decoder:inst7.display[3]
+display_4[4] <= decoder:inst7.display[4]
+display_4[5] <= decoder:inst7.display[5]
+display_4[6] <= decoder:inst7.display[6]
+
+
+|Autocorrelation|shift_register:inst1
+in => hold[2].DATAIN
+in => hold[1].DATAIN
+in => hold[0].DATAIN
+clk => clk_out~reg0.CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => i[0].CLK
+clk => i[1].CLK
+clk => i[2].CLK
+clk => i[3].CLK
+clk => i[4].CLK
+clk => i[5].CLK
+clk => i[6].CLK
+clk => i[7].CLK
+clk => i[8].CLK
+clk => i[9].CLK
+clk => i[10].CLK
+clk => i[11].CLK
+clk => i[12].CLK
+clk => i[13].CLK
+clk => i[14].CLK
+clk => i[15].CLK
+clk => i[16].CLK
+clk => i[17].CLK
+clk => i[18].CLK
+clk => i[19].CLK
+clk => i[20].CLK
+clk => i[21].CLK
+clk => i[22].CLK
+clk => i[23].CLK
+clk => i[24].CLK
+clk => i[25].CLK
+clk => i[26].CLK
+clk => i[27].CLK
+clk => i[28].CLK
+clk => i[29].CLK
+clk => i[30].CLK
+clk => i[31].CLK
+clk => hold[0].CLK
+clk => hold[1].CLK
+clk => hold[2].CLK
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Autocorrelation|decoder:inst3
+in[0] => Equal0.IN1
+in[0] => Equal1.IN0
+in[0] => Equal2.IN1
+in[0] => Equal3.IN1
+in[1] => Equal0.IN0
+in[1] => Equal1.IN1
+in[1] => Equal2.IN0
+in[1] => Equal3.IN0
+display[0] <= display[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= display[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= display[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= <VCC>
+display[6] <= display[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Autocorrelation|autocorrelator:inst2
+in[0] => Mult0.IN1
+in[0] => Mult1.IN1
+in[0] => Mult3.IN0
+in[0] => Mult3.IN1
+in[1] => Mult1.IN0
+in[1] => Mult2.IN1
+in[1] => Mult4.IN0
+in[1] => Mult4.IN1
+in[2] => Mult0.IN0
+in[2] => Mult2.IN0
+in[2] => Mult5.IN0
+in[2] => Mult5.IN1
+clk => out4[0]~reg0.CLK
+clk => out4[1]~reg0.CLK
+clk => out3[0]~reg0.CLK
+clk => out3[1]~reg0.CLK
+clk => out2[0]~reg0.CLK
+clk => out2[1]~reg0.CLK
+clk => out1[0]~reg0.CLK
+clk => out1[1]~reg0.CLK
+clk => out0[0]~reg0.CLK
+clk => out0[1]~reg0.CLK
+out0[0] <= out0[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out0[1] <= out0[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out1[0] <= out1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= out1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out2[0] <= out2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out2[1] <= out2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out3[0] <= out3[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out3[1] <= out3[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out4[0] <= out4[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out4[1] <= out4[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Autocorrelation|decoder:inst4
+in[0] => Equal0.IN1
+in[0] => Equal1.IN0
+in[0] => Equal2.IN1
+in[0] => Equal3.IN1
+in[1] => Equal0.IN0
+in[1] => Equal1.IN1
+in[1] => Equal2.IN0
+in[1] => Equal3.IN0
+display[0] <= display[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= display[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= display[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= <VCC>
+display[6] <= display[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Autocorrelation|decoder:inst5
+in[0] => Equal0.IN1
+in[0] => Equal1.IN0
+in[0] => Equal2.IN1
+in[0] => Equal3.IN1
+in[1] => Equal0.IN0
+in[1] => Equal1.IN1
+in[1] => Equal2.IN0
+in[1] => Equal3.IN0
+display[0] <= display[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= display[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= display[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= <VCC>
+display[6] <= display[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Autocorrelation|decoder:inst6
+in[0] => Equal0.IN1
+in[0] => Equal1.IN0
+in[0] => Equal2.IN1
+in[0] => Equal3.IN1
+in[1] => Equal0.IN0
+in[1] => Equal1.IN1
+in[1] => Equal2.IN0
+in[1] => Equal3.IN0
+display[0] <= display[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= display[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= display[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= <VCC>
+display[6] <= display[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Autocorrelation|decoder:inst7
+in[0] => Equal0.IN1
+in[0] => Equal1.IN0
+in[0] => Equal2.IN1
+in[0] => Equal3.IN1
+in[1] => Equal0.IN0
+in[1] => Equal1.IN1
+in[1] => Equal2.IN0
+in[1] => Equal3.IN0
+display[0] <= display[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= display[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= display[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= <VCC>
+display[6] <= display[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

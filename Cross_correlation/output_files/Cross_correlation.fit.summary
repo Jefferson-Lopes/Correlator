@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Jun 21 15:15:17 2020
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : Cross_correlation
+Top-level Entity Name : Cross_correlation
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 119 / 22,320 ( < 1 % )
+    Total combinational functions : 110 / 22,320 ( < 1 % )
+    Dedicated logic registers : 55 / 22,320 ( < 1 % )
+Total registers : 55
+Total pins : 38 / 154 ( 25 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
