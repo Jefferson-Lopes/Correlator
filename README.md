@@ -14,7 +14,7 @@ Similarly the autocorrelation of the discrete time signal x[n] is expressed as
 
 ![](https://latex.codecogs.com/gif.latex?Rxx%5Bm%5D%20%3D%20%5Csum_%7Bn%3D-%5Cinfty%7D%5E%7B%5Cinfty%7Dx%5Bn%5Dx%5E*%5Bn-m%5D)
 
-Learn more about this project, [click here](https://github.com/Jefferson-Lopes/FPGA/tree/master/Correlation/Autocorrelation)
+Learn more about this project, [click here](https://github.com/Jefferson-Lopes/Correlator/tree/master/Autocorrelation)
 
 ## Cross-Correlation
 This is a kind of correlation, in which the signal in-hand is correlated with another signal so as to know how much resemblance exists between them. Mathematical expression for the cross-correlation of continuous time signals x (t) and y (t) is given by
@@ -25,7 +25,7 @@ Similarly, the cross-correlation of the discrete time signals x [n] and y [n] is
 
 ![](https://latex.codecogs.com/gif.latex?Rxy%5Bm%5D%20%3D%20%5Csum_%7Bn%3D-%5Cinfty%7D%5E%7B%5Cinfty%7Dx%5Bn%5Dy%5E*%5Bn-m%5D)
 
-Learn more about this project, [click here](https://github.com/Jefferson-Lopes/FPGA/tree/master/Correlation/Cross_correlation)
+Learn more about this project, [click here](https://github.com/Jefferson-Lopes/Correlator/tree/master/Cross_correlation)
 
 ## Contact me
 [![](Output_files/gmail.png)](mailto:jefferson.lopes@ee.ufcg.edu.br?subject=[GitHub]%20FPGA%20-%20correlation) ![](Output_files/separador.png) [![](Output_files/insta.png)](https://instagram.com/jeff.777.lopes?igshid=1i5gr7ch0bvkd)

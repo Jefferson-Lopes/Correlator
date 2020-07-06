@@ -1,0 +1,5 @@
+*.sig linguist-language=SystemVerilog
+
+*.sld linguist-language=SystemVerilog
+
+*.html linguist-language=SystemVerilog
