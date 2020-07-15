@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Autocorrelation
-Sat Jun 20 15:12:09 2020
-Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Wed Jul 15 08:03:03 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -26,7 +26,7 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2019  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -46,8 +46,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jun 20 15:12:09 2020       ;
-; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Wed Jul 15 08:03:03 2020       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Autocorrelation                             ;
 ; Top-level Entity Name              ; Autocorrelation                             ;
 ; Family                             ; Cyclone IV E                                ;
@@ -55,7 +55,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Total combinational functions  ; 92                                          ;
 ;     Dedicated logic registers      ; 44                                          ;
 ; Total registers                    ; 44                                          ;
-; Total pins                         ; 38                                          ;
+; Total pins                         ; 37                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -166,16 +166,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                             ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
-; shift_register.sv                ; yes             ; User SystemVerilog HDL File        ; C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/shift_register.sv   ;         ;
-; autocorrelator.sv                ; yes             ; User SystemVerilog HDL File        ; C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/autocorrelator.sv   ;         ;
-; decoder.sv                       ; yes             ; User SystemVerilog HDL File        ; C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/decoder.sv          ;         ;
-; Autocorrelation.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/Autocorrelation.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
+; shift_register.sv                ; yes             ; User SystemVerilog HDL File        ; /home/jeff/Documents/GitHub/Correlator/Autocorrelation/shift_register.sv   ;         ;
+; autocorrelator.sv                ; yes             ; User SystemVerilog HDL File        ; /home/jeff/Documents/GitHub/Correlator/Autocorrelation/autocorrelator.sv   ;         ;
+; decoder.sv                       ; yes             ; User SystemVerilog HDL File        ; /home/jeff/Documents/GitHub/Correlator/Autocorrelation/decoder.sv          ;         ;
+; Autocorrelation.bdf              ; yes             ; User Block Diagram/Schematic File  ; /home/jeff/Documents/GitHub/Correlator/Autocorrelation/Autocorrelation.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -199,13 +199,13 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Dedicated logic registers            ; 44        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 38        ;
+; I/O pins                                    ; 37        ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 39        ;
-; Total fan-out                               ; 404       ;
+; Total fan-out                               ; 402       ;
 ; Average fan-out                             ; 1.91      ;
 +---------------------------------------------+-----------+
 
@@ -215,10 +215,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Entity Name     ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+-----------------+--------------+
-; |Autocorrelation           ; 92 (0)              ; 44 (0)                    ; 0           ; 0            ; 0       ; 0         ; 38   ; 0            ; |Autocorrelation                      ; Autocorrelation ; work         ;
+; |Autocorrelation           ; 92 (0)              ; 44 (0)                    ; 0           ; 0            ; 0       ; 0         ; 37   ; 0            ; |Autocorrelation                      ; Autocorrelation ; work         ;
 ;    |autocorrelator:inst2|  ; 5 (5)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Autocorrelation|autocorrelator:inst2 ; autocorrelator  ; work         ;
+;    |decoder:inst4|         ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Autocorrelation|decoder:inst4        ; decoder         ; work         ;
 ;    |decoder:inst5|         ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Autocorrelation|decoder:inst5        ; decoder         ; work         ;
-;    |decoder:inst6|         ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Autocorrelation|decoder:inst6        ; decoder         ; work         ;
 ;    |shift_register:inst1|  ; 81 (81)             ; 39 (39)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Autocorrelation|shift_register:inst1 ; shift_register  ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -268,7 +268,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 38                          ;
+; boundary_port         ; 37                          ;
 ; cycloneiii_ff         ; 44                          ;
 ;     ENA               ; 3                           ;
 ;     plain             ; 41                          ;
@@ -292,7 +292,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -301,34 +301,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sat Jun 20 15:11:55 2020
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Wed Jul 15 08:02:50 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Autocorrelation -c Autocorrelation
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file shift_register.sv
-    Info (12023): Found entity 1: shift_register File: C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/shift_register.sv Line: 7
+    Info (12023): Found entity 1: shift_register File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/shift_register.sv Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file autocorrelator.sv
-    Info (12023): Found entity 1: autocorrelator File: C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/autocorrelator.sv Line: 7
+    Info (12023): Found entity 1: autocorrelator File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/autocorrelator.sv Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
-    Info (12023): Found entity 1: decoder File: C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/decoder.sv Line: 7
-Info (12021): Found 1 design units, including 1 entities, in source file autocorrelation.bdf
+    Info (12023): Found entity 1: decoder File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/decoder.sv Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file Autocorrelation.bdf
     Info (12023): Found entity 1: Autocorrelation
 Info (12127): Elaborating entity "Autocorrelation" for the top level hierarchy
-Info (12128): Elaborating entity "shift_register" for hierarchy "shift_register:inst1"
-Warning (10175): Verilog HDL warning at shift_register.sv(17): ignoring unsupported system task File: C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/shift_register.sv Line: 17
 Info (12128): Elaborating entity "decoder" for hierarchy "decoder:inst3"
-Warning (10240): Verilog HDL Always Construct warning at decoder.sv(12): inferring latch(es) for variable "display", which holds its previous value in one or more paths through the always construct File: C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/decoder.sv Line: 12
-Info (10041): Inferred latch for "display[0]" at decoder.sv(12) File: C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/decoder.sv Line: 12
-Info (10041): Inferred latch for "display[1]" at decoder.sv(12) File: C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/decoder.sv Line: 12
-Info (10041): Inferred latch for "display[2]" at decoder.sv(12) File: C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/decoder.sv Line: 12
-Info (10041): Inferred latch for "display[3]" at decoder.sv(12) File: C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/decoder.sv Line: 12
-Info (10041): Inferred latch for "display[4]" at decoder.sv(12) File: C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/decoder.sv Line: 12
-Info (10041): Inferred latch for "display[5]" at decoder.sv(12) File: C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/decoder.sv Line: 12
-Info (10041): Inferred latch for "display[6]" at decoder.sv(12) File: C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/decoder.sv Line: 12
+Warning (10240): Verilog HDL Always Construct warning at decoder.sv(12): inferring latch(es) for variable "display", which holds its previous value in one or more paths through the always construct File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/decoder.sv Line: 12
+Info (10041): Inferred latch for "display[0]" at decoder.sv(12) File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/decoder.sv Line: 12
+Info (10041): Inferred latch for "display[1]" at decoder.sv(12) File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/decoder.sv Line: 12
+Info (10041): Inferred latch for "display[2]" at decoder.sv(12) File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/decoder.sv Line: 12
+Info (10041): Inferred latch for "display[3]" at decoder.sv(12) File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/decoder.sv Line: 12
+Info (10041): Inferred latch for "display[4]" at decoder.sv(12) File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/decoder.sv Line: 12
+Info (10041): Inferred latch for "display[5]" at decoder.sv(12) File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/decoder.sv Line: 12
+Info (10041): Inferred latch for "display[6]" at decoder.sv(12) File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/decoder.sv Line: 12
 Info (12128): Elaborating entity "autocorrelator" for hierarchy "autocorrelator:inst2"
-Warning (14025): LATCH primitive "decoder:inst7|display[4]" is permanently disabled File: C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/decoder.sv Line: 12
-Warning (14025): LATCH primitive "decoder:inst3|display[4]" is permanently disabled File: C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/decoder.sv Line: 12
+Info (12128): Elaborating entity "shift_register" for hierarchy "shift_register:inst1"
+Warning (10175): Verilog HDL warning at shift_register.sv(17): ignoring unsupported system task File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/shift_register.sv Line: 17
+Warning (14025): LATCH primitive "decoder:inst7|display[4]" is permanently disabled File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/decoder.sv Line: 12
+Warning (14025): LATCH primitive "decoder:inst3|display[4]" is permanently disabled File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/decoder.sv Line: 12
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "display_0[5]" is stuck at VCC
     Warning (13410): Pin "display_0[4]" is stuck at VCC
@@ -340,23 +340,23 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "display_4[4]" is stuck at VCC
     Warning (13410): Pin "display_4[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/output_files/Autocorrelation.map.smsg
+Info (144001): Generated suppressed messages file /home/jeff/Documents/GitHub/Correlator/Autocorrelation/output_files/Autocorrelation.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 134 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 133 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 36 output pins
+    Info (21059): Implemented 35 output pins
     Info (21061): Implemented 96 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4745 megabytes
-    Info: Processing ended: Sat Jun 20 15:12:09 2020
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 379 megabytes
+    Info: Processing ended: Wed Jul 15 08:03:03 2020
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/jeff7/Documents/HDL/Verilog/Autocorrelation/output_files/Autocorrelation.map.smsg.
+The suppressed messages can be found in /home/jeff/Documents/GitHub/Correlator/Autocorrelation/output_files/Autocorrelation.map.smsg.
 
 

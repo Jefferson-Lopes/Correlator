@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sat Jun 20 15:12:18 2020
-Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Fitter Status : Successful - Wed Jul 15 08:05:20 2020
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Autocorrelation
 Top-level Entity Name : Autocorrelation
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 95 / 22,320 ( < 1 % )
+Total logic elements : 92 / 22,320 ( < 1 % )
     Total combinational functions : 92 / 22,320 ( < 1 % )
     Dedicated logic registers : 44 / 22,320 ( < 1 % )
 Total registers : 44
-Total pins : 38 / 154 ( 25 % )
+Total pins : 37 / 154 ( 24 % )
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )

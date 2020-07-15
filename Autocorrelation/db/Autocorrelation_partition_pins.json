@@ -4,10 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "clk_out",
-					"strict" : false
-				},
-				{
 					"name" : "display_0[6]",
 					"strict" : false
 				},

@@ -16,7 +16,7 @@ module shift_register (in, clk, out, clk_out);
   
    initial $monitor("i = %b\ny = %b\n", i, y);
   
-   always @ (negedge clk) begin //Pull up resistor
+   always @ (posedge clk) begin
       hold[i] <= in;
       if (i == 1'b0) begin
          i = 2;

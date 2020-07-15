@@ -1,7 +1,4 @@
 |Autocorrelation
-clk_out <= shift_register:inst1.clk_out
-in => shift_register:inst1.in
-clk => shift_register:inst1.clk
 display_0[0] <= decoder:inst3.display[0]
 display_0[1] <= decoder:inst3.display[1]
 display_0[2] <= decoder:inst3.display[2]
@@ -9,6 +6,8 @@ display_0[3] <= decoder:inst3.display[3]
 display_0[4] <= decoder:inst3.display[4]
 display_0[5] <= decoder:inst3.display[5]
 display_0[6] <= decoder:inst3.display[6]
+in => shift_register:inst1.in
+clk => shift_register:inst1.clk
 display_1[0] <= decoder:inst4.display[0]
 display_1[1] <= decoder:inst4.display[1]
 display_1[2] <= decoder:inst4.display[2]
@@ -37,55 +36,6 @@ display_4[3] <= decoder:inst7.display[3]
 display_4[4] <= decoder:inst7.display[4]
 display_4[5] <= decoder:inst7.display[5]
 display_4[6] <= decoder:inst7.display[6]
-
-
-|Autocorrelation|shift_register:inst1
-in => hold[2].DATAIN
-in => hold[1].DATAIN
-in => hold[0].DATAIN
-clk => clk_out~reg0.CLK
-clk => out[0]~reg0.CLK
-clk => out[1]~reg0.CLK
-clk => out[2]~reg0.CLK
-clk => i[0].CLK
-clk => i[1].CLK
-clk => i[2].CLK
-clk => i[3].CLK
-clk => i[4].CLK
-clk => i[5].CLK
-clk => i[6].CLK
-clk => i[7].CLK
-clk => i[8].CLK
-clk => i[9].CLK
-clk => i[10].CLK
-clk => i[11].CLK
-clk => i[12].CLK
-clk => i[13].CLK
-clk => i[14].CLK
-clk => i[15].CLK
-clk => i[16].CLK
-clk => i[17].CLK
-clk => i[18].CLK
-clk => i[19].CLK
-clk => i[20].CLK
-clk => i[21].CLK
-clk => i[22].CLK
-clk => i[23].CLK
-clk => i[24].CLK
-clk => i[25].CLK
-clk => i[26].CLK
-clk => i[27].CLK
-clk => i[28].CLK
-clk => i[29].CLK
-clk => i[30].CLK
-clk => i[31].CLK
-clk => hold[0].CLK
-clk => hold[1].CLK
-clk => hold[2].CLK
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Autocorrelation|decoder:inst3
@@ -139,6 +89,55 @@ out3[0] <= out3[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out3[1] <= out3[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out4[0] <= out4[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out4[1] <= out4[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Autocorrelation|shift_register:inst1
+in => hold[2].DATAIN
+in => hold[1].DATAIN
+in => hold[0].DATAIN
+clk => clk_out~reg0.CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => i[0].CLK
+clk => i[1].CLK
+clk => i[2].CLK
+clk => i[3].CLK
+clk => i[4].CLK
+clk => i[5].CLK
+clk => i[6].CLK
+clk => i[7].CLK
+clk => i[8].CLK
+clk => i[9].CLK
+clk => i[10].CLK
+clk => i[11].CLK
+clk => i[12].CLK
+clk => i[13].CLK
+clk => i[14].CLK
+clk => i[15].CLK
+clk => i[16].CLK
+clk => i[17].CLK
+clk => i[18].CLK
+clk => i[19].CLK
+clk => i[20].CLK
+clk => i[21].CLK
+clk => i[22].CLK
+clk => i[23].CLK
+clk => i[24].CLK
+clk => i[25].CLK
+clk => i[26].CLK
+clk => i[27].CLK
+clk => i[28].CLK
+clk => i[29].CLK
+clk => i[30].CLK
+clk => i[31].CLK
+clk => hold[0].CLK
+clk => hold[1].CLK
+clk => hold[2].CLK
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Autocorrelation|decoder:inst4
