@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Autocorrelation
-Thu Jul 16 15:23:48 2020
+Thu Jul 16 18:14:27 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jul 16 15:23:48 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jul 16 18:14:27 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Autocorrelation                             ;
 ; Top-level Entity Name              ; Autocorrelation                             ;
@@ -307,7 +307,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Jul 16 15:23:36 2020
+    Info: Processing started: Thu Jul 16 18:14:13 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Autocorrelation -c Autocorrelation
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -359,10 +359,10 @@ Info (21057): Implemented 185 device resources after synthesis - the final resou
     Info (21059): Implemented 35 output pins
     Info (21061): Implemented 147 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 376 megabytes
-    Info: Processing ended: Thu Jul 16 15:23:48 2020
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Peak virtual memory: 379 megabytes
+    Info: Processing ended: Thu Jul 16 18:14:27 2020
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+

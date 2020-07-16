@@ -1,5 +1,5 @@
 Flow report for Autocorrelation
-Thu Jul 16 15:24:04 2020
+Thu Jul 16 18:14:48 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,14 +41,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Jul 16 15:24:00 2020       ;
+; Flow Status                        ; Successful - Thu Jul 16 18:14:45 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Autocorrelation                             ;
 ; Top-level Entity Name              ; Autocorrelation                             ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 147 / 22,320 ( < 1 % )                      ;
+; Total logic elements               ; 145 / 22,320 ( < 1 % )                      ;
 ;     Total combinational functions  ; 137 / 22,320 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 77 / 22,320 ( < 1 % )                       ;
 ; Total registers                    ; 77                                          ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/16/2020 15:23:37 ;
+; Start date & time ; 07/16/2020 18:14:13 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Autocorrelation     ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 277375815847340.159492381713713        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 198830102866097.159493405303195        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -92,11 +92,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 363 MB              ; 00:00:27                           ;
-; Fitter               ; 00:00:09     ; 1.0                     ; 718 MB              ; 00:00:10                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 343 MB              ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 365 MB              ; 00:00:27                           ;
+; Fitter               ; 00:00:14     ; 1.0                     ; 715 MB              ; 00:00:11                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 342 MB              ; 00:00:01                           ;
 ; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 435 MB              ; 00:00:02                           ;
-; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:40                           ;
+; Total                ; 00:00:31     ; --                      ; --                  ; 00:00:41                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
