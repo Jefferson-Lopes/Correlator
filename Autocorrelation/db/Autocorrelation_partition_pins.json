@@ -108,11 +108,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "in",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "in",
+					"name" : "crystal",
 					"strict" : false
 				}
 			]

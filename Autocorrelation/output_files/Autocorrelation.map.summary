@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Jul 15 08:03:03 2020
+Analysis & Synthesis Status : Successful - Thu Jul 16 15:23:48 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Autocorrelation
 Top-level Entity Name : Autocorrelation
 Family : Cyclone IV E
-Total logic elements : 95
-    Total combinational functions : 92
-    Dedicated logic registers : 44
-Total registers : 44
-Total pins : 37
+Total logic elements : 146
+    Total combinational functions : 137
+    Dedicated logic registers : 77
+Total registers : 77
+Total pins : 38
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

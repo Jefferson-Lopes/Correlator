@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at shift_register.sv(19): always construct contains both blocking and non-blocking assignments File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/shift_register.sv Line: 19
+Warning (10268): Verilog HDL information at shift_register.sv(17): always construct contains both blocking and non-blocking assignments File: /home/jeff/Documents/GitHub/Correlator/Autocorrelation/shift_register.sv Line: 17

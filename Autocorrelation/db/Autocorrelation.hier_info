@@ -6,8 +6,9 @@ display_0[3] <= decoder:inst3.display[3]
 display_0[4] <= decoder:inst3.display[4]
 display_0[5] <= decoder:inst3.display[5]
 display_0[6] <= decoder:inst3.display[6]
-in => shift_register:inst1.in
-clk => shift_register:inst1.clk
+in => debounce:inst8.in
+crystal => slow_clk:inst.clk_in
+clk => debounce:inst9.in
 display_1[0] <= decoder:inst4.display[0]
 display_1[1] <= decoder:inst4.display[1]
 display_1[2] <= decoder:inst4.display[2]
@@ -138,6 +139,53 @@ out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Autocorrelation|debounce:inst8
+in => ff[0].DATAIN
+clk => ff[0].CLK
+clk => ff[1].CLK
+clk => ff[2].CLK
+out <= always1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Autocorrelation|slow_clk:inst
+clk_in => clk_out~reg0.CLK
+clk_in => counter[0].CLK
+clk_in => counter[1].CLK
+clk_in => counter[2].CLK
+clk_in => counter[3].CLK
+clk_in => counter[4].CLK
+clk_in => counter[5].CLK
+clk_in => counter[6].CLK
+clk_in => counter[7].CLK
+clk_in => counter[8].CLK
+clk_in => counter[9].CLK
+clk_in => counter[10].CLK
+clk_in => counter[11].CLK
+clk_in => counter[12].CLK
+clk_in => counter[13].CLK
+clk_in => counter[14].CLK
+clk_in => counter[15].CLK
+clk_in => counter[16].CLK
+clk_in => counter[17].CLK
+clk_in => counter[18].CLK
+clk_in => counter[19].CLK
+clk_in => counter[20].CLK
+clk_in => counter[21].CLK
+clk_in => counter[22].CLK
+clk_in => counter[23].CLK
+clk_in => counter[24].CLK
+clk_in => counter[25].CLK
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Autocorrelation|debounce:inst9
+in => ff[0].DATAIN
+clk => ff[0].CLK
+clk => ff[1].CLK
+clk => ff[2].CLK
+out <= always1.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Autocorrelation|decoder:inst4
