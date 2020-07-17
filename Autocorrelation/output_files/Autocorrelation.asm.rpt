@@ -1,6 +1,6 @@
 Assembler report for Autocorrelation
-Thu Jul 16 18:14:45 2020
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Thu Jul 16 22:08:31 2020
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
 ---------------------
@@ -10,7 +10,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: Autocorrelation.sof
+  5. Assembler Device Options: C:/Users/jeff7/Documents/GitHub/Correlator/Autocorrelation/output_files/Autocorrelation.sof
   6. Assembler Messages
 
 
@@ -18,7 +18,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Jul 16 18:14:45 2020 ;
+; Assembler Status      ; Successful - Thu Jul 16 22:08:31 2020 ;
 ; Revision Name         ; Autocorrelation                       ;
 ; Top-level Entity Name ; Autocorrelation                       ;
 ; Family                ; Cyclone IV E                          ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                               ;
-+-----------------------------------------------------------------------------------------+
-; File Name                                                                               ;
-+-----------------------------------------------------------------------------------------+
-; /home/jeff/Documents/GitHub/Correlator/Autocorrelation/output_files/Autocorrelation.sof ;
-+-----------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                   ;
++---------------------------------------------------------------------------------------------+
+; File Name                                                                                   ;
++---------------------------------------------------------------------------------------------+
+; C:/Users/jeff7/Documents/GitHub/Correlator/Autocorrelation/output_files/Autocorrelation.sof ;
++---------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------+
-; Assembler Device Options: Autocorrelation.sof ;
-+----------------+------------------------------+
-; Option         ; Setting                      ;
-+----------------+------------------------------+
-; JTAG usercode  ; 0x001495BD                   ;
-; Checksum       ; 0x001495BD                   ;
-+----------------+------------------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/jeff7/Documents/GitHub/Correlator/Autocorrelation/output_files/Autocorrelation.sof ;
++----------------+------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                              ;
++----------------+------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x0014961C                                                                                           ;
+; Checksum       ; 0x0014961C                                                                                           ;
++----------------+------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -77,16 +77,16 @@ https://fpgasoftware.intel.com/eula.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Jul 16 18:14:43 2020
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Thu Jul 16 22:08:30 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Autocorrelation -c Autocorrelation
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 342 megabytes
-    Info: Processing ended: Thu Jul 16 18:14:45 2020
+    Info: Peak virtual memory: 4694 megabytes
+    Info: Processing ended: Thu Jul 16 22:08:32 2020
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -93,9 +93,12 @@ out4[1] <= out4[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Autocorrelation|shift_register:inst1
+in => hold[0].DATAIN
 in => hold[2].DATAIN
 in => hold[1].DATAIN
-in => hold[0].DATAIN
+clk => hold[0].CLK
+clk => hold[1].CLK
+clk => hold[2].CLK
 clk => clk_out~reg0.CLK
 clk => out[0]~reg0.CLK
 clk => out[1]~reg0.CLK
@@ -132,9 +135,6 @@ clk => i[28].CLK
 clk => i[29].CLK
 clk => i[30].CLK
 clk => i[31].CLK
-clk => hold[0].CLK
-clk => hold[1].CLK
-clk => hold[2].CLK
 out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
