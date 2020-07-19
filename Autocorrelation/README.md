@@ -3,7 +3,7 @@
 ## Top-level entity
 ![](../Output_files/Autocorrelation.png)
 
-This entity was assembled in a .BDF file from other blocks, such as ***Slow Clock***, ***Debounce***, ***Shift Register***, ***Autocorrelator***, and ***Decoder***.
+This entity was assembled in a .BDF file from other blocks, such as ***Slow Clock***, ***Debounce***, ***Shift Register***, ***Autocorrelator*** and ***Decoder***.
 
 RTL view:
 
