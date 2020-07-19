@@ -13,6 +13,8 @@ RTL view:
 
 The ***Slow Clock*** receives a 50 MHz clock input from the built-in crystal oscillator and transforms it into a 50 Hz clock output to be used on the Debounce circuit as a base clock.
 
+Verilog code:
+
 ~~~verilog
 module slow_clk(clk_in, clk_out);
     input clk_in;
@@ -34,6 +36,42 @@ RTL view:
 
 ![](../Output_files/SlowClock.png)
 
+## Debounce
+
+The ***Debounce*** circuit was made the avoid the bouncing effect of any mechanical button.
+
+The way it works is bypassing the input signal through three *FlipFlops* and then comparing the output of each *FlipFlop* using an *AND* logic gate. The result of the logic gate will be the output of the circuit.
+
+Verilog code:
+
+~~~verilog
+module debounce(in, clk, out);
+	input in;
+	input clk;
+	output reg out;
+	
+	reg [2:0] ff;
+	
+	always @ (posedge clk) begin
+		ff[2] = ff[1];
+		ff[1] = ff[0];
+		ff[0] = in;
+	end
+	
+	always begin
+		if (ff[0] && ff[1] && ff[2]) begin
+			out <= 1'b1;
+		end else begin
+			out <= 1'b0;
+		end
+	end
+endmodule
+~~~
+
+RTL view:
+
+![](../Output_files/Debounce.png)
+
 ## Shift Register
 
 The ***Shift Register*** transforms a serial input into 3 separate outputs, where ***out[0]*** receives the least significant bit and ***out[2]*** receives the most significant bit.
@@ -46,6 +84,8 @@ The output is released after every 3 inputs clocks.
 retirar 
 
 NOTE: the ***always*** block is sensitive to the falling edge of the clock because, in the FPGA used for the tests, the button used to represent the clock has a ***pull-up resistor***, keeping it in **HIGH** when not pressed.
+
+Verilog code:
 
 ~~~verilog
 module shift_register (in, clk, out, clk_out);
@@ -85,6 +125,8 @@ This block makes the autocorrelation between the input signal with itself shifte
 The input is a 3-bit vector, which represents the serial input signal, and the outputs are 5 vectors of 2 bits each, which represent the autocorrelation in binary. 
 
 NOTE: the logic used was made in C++ and then adapted for Verilog, to facilitate the writing of ideas.
+
+Verilog code:
 
 ~~~verilog
 module autocorrelator (in, clk, out0, out1, out2, out3, out4);
@@ -141,6 +183,8 @@ RTL view:
 The ***Decoder*** is used to transform the output in bits from the ***Autocorrelator*** to a seven-segment display.
 
 For each 2-bit output of the ***Autocorrelator***, one ***Decoder*** is used.
+
+Verilog code:
 
 ~~~verilog
 module decoder(in, display);
