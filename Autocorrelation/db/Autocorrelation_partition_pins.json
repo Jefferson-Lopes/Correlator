@@ -112,11 +112,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "crystal",
 					"strict" : false
 				},
 				{
-					"name" : "crystal",
+					"name" : "clk",
 					"strict" : false
 				}
 			]

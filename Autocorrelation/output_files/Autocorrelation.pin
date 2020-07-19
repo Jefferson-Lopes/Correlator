@@ -70,7 +70,7 @@ CHIP  "Autocorrelation"  ASSIGNED TO AN: EP4CE22F17C6
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A2        :        :                   :         : 8         :                
+display_4[3]                 : A2        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A3        :        :                   :         : 8         :                
 display_3[3]                 : A4        : output : 2.5 V             :         : 8         : Y              
 display_3[5]                 : A5        : output : 2.5 V             :         : 8         : Y              
@@ -78,23 +78,23 @@ display_3[6]                 : A6        : output : 2.5 V             :         
 display_2[2]                 : A7        : output : 2.5 V             :         : 8         : Y              
 GND+                         : A8        :        :                   :         : 8         :                
 GND+                         : A9        :        :                   :         : 7         :                
-display_4[6]                 : A10       : output : 2.5 V             :         : 7         : N              
-display_4[2]                 : A11       : output : 2.5 V             :         : 7         : N              
+display_4[1]                 : A10       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A11       :        :                   :         : 7         :                
 display_0[6]                 : A12       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A13       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A14       :        :                   :         : 7         :                
-display_4[3]                 : A15       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A15       :        :                   :         : 7         :                
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B1        :        :                   :         : 1         :                
 GND                          : B2        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B3        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B4        :        :                   :         : 8         :                
+display_4[2]                 : B4        : output : 2.5 V             :         : 8         : N              
 display_3[4]                 : B5        : output : 2.5 V             :         : 8         : Y              
 display_3[1]                 : B6        : output : 2.5 V             :         : 8         : Y              
 display_2[4]                 : B7        : output : 2.5 V             :         : 8         : Y              
 GND+                         : B8        :        :                   :         : 8         :                
 GND+                         : B9        :        :                   :         : 7         :                
-display_4[1]                 : B10       : output : 2.5 V             :         : 7         : N              
+display_4[6]                 : B10       : output : 2.5 V             :         : 7         : N              
 display_0[3]                 : B11       : output : 2.5 V             :         : 7         : Y              
 display_0[1]                 : B12       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : B13       :        :                   :         : 7         :                
