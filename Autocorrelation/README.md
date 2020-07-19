@@ -15,19 +15,18 @@ The ***Slow Clock*** receives a 50 MHz clock input from the built-in crystal osc
 
 ~~~verilog
 module slow_clk(clk_in, clk_out);
-	input clk_in;
-	output clk_out;
+    input clk_in;
+    output clk_out;
 	
-	reg [25:0] counter = 0;
+    reg [25:0] counter = 0;
 	
-	always @ (posedge clk_in) begin
-		counter <= counter + 1;
-		if (counter == 500_000) begin
-			counter <= 0;
-			clk_out <= ~clk_out;
-		end 
-	end
-	
+    always @ (posedge clk_in) begin
+        counter <= counter + 1;
+	if (counter == 500_000) begin
+	    counter <= 0;
+	    clk_out <= ~clk_out;
+	    end 
+    end
 endmodule
 ~~~
 
