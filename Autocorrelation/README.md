@@ -3,11 +3,37 @@
 ## Top-level entity
 ![](../Output_files/Autocorrelation.png)
 
-This entity was assembled in a .BDF file from other blocks, such as ***Shift Register***, ***Autocorrelator***, and ***Decoder***.
+This entity was assembled in a .BDF file from other blocks, such as ***Slow Clock***, ***Debounce***, ***Shift Register***, ***Autocorrelator***, and ***Decoder***.
 
 RTL view:
 
 ![](../Output_files/Top-level-Auto.png)
+
+## Slow Clock
+
+The ***Slow Clock*** receives a 50 MHz clock input from the built-in crystal oscillator and transforms it into a 50 Hz clock output to be used on the Debounce circuit as a base clock.
+
+~~~verilog
+module slow_clk(clk_in, clk_out);
+	input clk_in;
+	output clk_out;
+	
+	reg [25:0] counter = 0;
+	
+	always @ (posedge clk_in) begin
+		counter <= counter + 1;
+		if (counter == 500_000) begin
+			counter <= 0;
+			clk_out <= ~clk_out;
+		end 
+	end
+	
+endmodule
+~~~
+
+RTL view:
+
+![](../Output_files/SlowClock.png)
 
 ## Shift Register
 
@@ -16,6 +42,9 @@ The ***Shift Register*** transforms a serial input into 3 separate outputs, wher
 The output is released after every 3 inputs clocks.
 
 ***Clk_out*** is activated each time the output is loaded, serving as a clock for the next blocks.
+
+
+retirar 
 
 NOTE: the ***always*** block is sensitive to the falling edge of the clock because, in the FPGA used for the tests, the button used to represent the clock has a ***pull-up resistor***, keeping it in **HIGH** when not pressed.
 
