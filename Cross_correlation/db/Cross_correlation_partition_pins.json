@@ -8,10 +8,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "display0[4]",
-					"strict" : false
-				},
-				{
 					"name" : "display0[3]",
 					"strict" : false
 				},
@@ -21,10 +17,6 @@
 				},
 				{
 					"name" : "display0[1]",
-					"strict" : false
-				},
-				{
-					"name" : "display0[0]",
 					"strict" : false
 				},
 				{
@@ -104,10 +96,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "display4[4]",
-					"strict" : false
-				},
-				{
 					"name" : "display4[3]",
 					"strict" : false
 				},
@@ -120,19 +108,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "display4[0]",
+					"name" : "in1",
 					"strict" : false
 				},
 				{
-					"name" : "clock",
+					"name" : "in2",
 					"strict" : false
 				},
 				{
-					"name" : "input_1",
+					"name" : "crystal",
 					"strict" : false
 				},
 				{
-					"name" : "input_2",
+					"name" : "clk",
 					"strict" : false
 				}
 			]
