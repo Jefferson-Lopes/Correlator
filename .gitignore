@@ -1,0 +1,4 @@
+#Ignore files
+*.qws
+*.db_info
+*.flock
