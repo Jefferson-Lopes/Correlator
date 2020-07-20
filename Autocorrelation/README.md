@@ -27,7 +27,7 @@ module slow_clk(clk_in, clk_out);
 	if (counter == 500_000) begin
 	    counter <= 0;
 	    clk_out <= ~clk_out;
-	    end 
+	end 
     end
 endmodule
 ~~~
@@ -46,25 +46,25 @@ Verilog code:
 
 ~~~verilog
 module debounce(in, clk, out);
-	input in;
-	input clk;
-	output reg out;
+    input in;
+    input clk;
+    output reg out;
 	
-	reg [2:0] ff;
+    reg [2:0] ff;
 	
-	always @ (posedge clk) begin
-		ff[2] = ff[1];
-		ff[1] = ff[0];
-		ff[0] = in;
-	end
+    always @ (posedge clk) begin
+        ff[2] = ff[1];
+        ff[1] = ff[0];
+        ff[0] = in;
+    end
 	
-	always begin
-		if (ff[0] && ff[1] && ff[2]) begin
-			out <= 1'b1;
-		end else begin
-			out <= 1'b0;
-		end
-	end
+    always begin
+        if (ff[0] && ff[1] && ff[2]) begin
+            out <= 1'b1;
+        end else begin
+            out <= 1'b0;
+        end
+    end
 endmodule
 ~~~
 
@@ -98,17 +98,17 @@ module shift_register (in, clk, out, clk_out);
     integer y = 0;
     reg [2:0]hold;
   
-    always @ (negedge clk) begin
-        hold[i] <= in;
+    always @ (posedge clk) begin
+        hold[i] = in;
         if (i == 1'b0) begin
-            i = 2;
+            i <= 2;
             for(y = 0; y < 3; y = y + 1) begin
-                out[y] <= hold[y];
+                out[y] = hold[y];
             end
-		clk_out <= 1;
+                clk_out = 1; 
         end else begin
             i <= i - 1;
-	    clk_out <= 0;
+            clk_out <= 0;
         end 
     end
 endmodule
@@ -170,7 +170,6 @@ module autocorrelator (in, clk, out0, out1, out2, out3, out4);
 	out3 = hold2[3];
 	out4 = hold2[4];
     end
-
 endmodule
 ~~~
 
@@ -197,16 +196,15 @@ module decoder(in, display);
             display <= 7'b1111110;         // abcdef0
        
         end else if (in == 2'b01) begin    // 1
-  	    display <= 7'b0110000;         // 0bc0000
+  	    	display <= 7'b0110000;         // 0bc0000
        
         end else if (in == 2'b10) begin    // 2
-  	    display <= 7'b1101101;         // ab0de0g
+  	    	display <= 7'b1101101;         // ab0de0g
        
         end else if (in == 2'b11) begin    // 3
-  	    display <= 7'b1111001;         // abcd00g  
+  	    	display <= 7'b1111001;         // abcd00g  
         end
     end
-
 endmodule
 ~~~
 
