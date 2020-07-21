@@ -1,5 +1,5 @@
 Flow report for Cross_correlation
-Mon Jul 20 10:26:44 2020
+Mon Jul 20 14:22:42 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Jul 20 10:26:36 2020       ;
+; Flow Status                        ; Successful - Mon Jul 20 14:22:33 2020       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; Cross_correlation                           ;
 ; Top-level Entity Name              ; Cross_correlation                           ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/20/2020 10:25:49 ;
+; Start date & time ; 07/20/2020 14:21:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Cross_correlation   ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 277375815847340.159525154815344        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 277375815847340.159526569801804        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -92,11 +92,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:25     ; 1.0                     ; 4744 MB             ; 00:00:44                           ;
-; Fitter               ; 00:00:14     ; 1.0                     ; 5280 MB             ; 00:00:15                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4696 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 4779 MB             ; 00:00:04                           ;
-; Total                ; 00:00:46     ; --                      ; --                  ; 00:01:05                           ;
+; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 4745 MB             ; 00:00:38                           ;
+; Fitter               ; 00:00:20     ; 1.0                     ; 5273 MB             ; 00:00:13                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4692 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 4772 MB             ; 00:00:03                           ;
+; Total                ; 00:00:49     ; --                      ; --                  ; 00:00:56                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

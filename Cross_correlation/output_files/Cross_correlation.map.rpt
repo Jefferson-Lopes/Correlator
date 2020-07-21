@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Cross_correlation
-Mon Jul 20 10:26:14 2020
+Mon Jul 20 14:22:00 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -47,7 +47,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jul 20 10:26:14 2020       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jul 20 14:22:00 2020       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; Cross_correlation                           ;
 ; Top-level Entity Name              ; Cross_correlation                           ;
@@ -163,7 +163,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -181,36 +181,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                       ;
-+---------------------------------------------+---------------------+
-; Resource                                    ; Usage               ;
-+---------------------------------------------+---------------------+
-; Estimated Total logic elements              ; 166                 ;
-;                                             ;                     ;
-; Total combinational functions               ; 151                 ;
-; Logic element usage by number of LUT inputs ;                     ;
-;     -- 4 input functions                    ; 33                  ;
-;     -- 3 input functions                    ; 47                  ;
-;     -- <=2 input functions                  ; 71                  ;
-;                                             ;                     ;
-; Logic elements by mode                      ;                     ;
-;     -- normal mode                          ; 95                  ;
-;     -- arithmetic mode                      ; 56                  ;
-;                                             ;                     ;
-; Total registers                             ; 89                  ;
-;     -- Dedicated logic registers            ; 89                  ;
-;     -- I/O registers                        ; 0                   ;
-;                                             ;                     ;
-; I/O pins                                    ; 39                  ;
-;                                             ;                     ;
-; Embedded Multiplier 9-bit elements          ; 0                   ;
-;                                             ;                     ;
-; Maximum fan-out node                        ; debounce:inst10|out ;
-; Maximum fan-out                             ; 45                  ;
-; Total fan-out                               ; 661                 ;
-; Average fan-out                             ; 2.08                ;
-+---------------------------------------------+---------------------+
++------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                      ;
++---------------------------------------------+--------------------+
+; Resource                                    ; Usage              ;
++---------------------------------------------+--------------------+
+; Estimated Total logic elements              ; 166                ;
+;                                             ;                    ;
+; Total combinational functions               ; 151                ;
+; Logic element usage by number of LUT inputs ;                    ;
+;     -- 4 input functions                    ; 33                 ;
+;     -- 3 input functions                    ; 47                 ;
+;     -- <=2 input functions                  ; 71                 ;
+;                                             ;                    ;
+; Logic elements by mode                      ;                    ;
+;     -- normal mode                          ; 95                 ;
+;     -- arithmetic mode                      ; 56                 ;
+;                                             ;                    ;
+; Total registers                             ; 89                 ;
+;     -- Dedicated logic registers            ; 89                 ;
+;     -- I/O registers                        ; 0                  ;
+;                                             ;                    ;
+; I/O pins                                    ; 39                 ;
+;                                             ;                    ;
+; Embedded Multiplier 9-bit elements          ; 0                  ;
+;                                             ;                    ;
+; Maximum fan-out node                        ; debounce:inst4|out ;
+; Maximum fan-out                             ; 45                 ;
+; Total fan-out                               ; 661                ;
+; Average fan-out                             ; 2.08               ;
++---------------------------------------------+--------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -219,16 +219,16 @@ https://fpgasoftware.intel.com/eula.
 ; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name       ; Library Name ;
 +-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+-------------------+--------------+
 ; |Cross_correlation          ; 151 (0)             ; 89 (0)                    ; 0           ; 0            ; 0       ; 0         ; 39   ; 0            ; |Cross_correlation                        ; Cross_correlation ; work         ;
-;    |cross_correlator:inst3| ; 10 (10)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|cross_correlator:inst3 ; cross_correlator  ; work         ;
-;    |debounce:inst10|        ; 1 (1)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|debounce:inst10        ; debounce          ; work         ;
-;    |debounce:inst9|         ; 0 (0)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|debounce:inst9         ; debounce          ; work         ;
-;    |debounce:inst|          ; 0 (0)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|debounce:inst          ; debounce          ; work         ;
-;    |decoder:inst5|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|decoder:inst5          ; decoder           ; work         ;
-;    |decoder:inst6|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|decoder:inst6          ; decoder           ; work         ;
-;    |decoder:inst7|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|decoder:inst7          ; decoder           ; work         ;
-;    |shift_register:inst1|   ; 83 (83)             ; 39 (39)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|shift_register:inst1   ; shift_register    ; work         ;
-;    |shift_register:inst2|   ; 5 (5)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|shift_register:inst2   ; shift_register    ; work         ;
-;    |slow_clk:inst111|       ; 43 (43)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|slow_clk:inst111       ; slow_clk          ; work         ;
+;    |cross_correlator:inst7| ; 10 (10)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|cross_correlator:inst7 ; cross_correlator  ; work         ;
+;    |debounce:inst2|         ; 0 (0)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|debounce:inst2         ; debounce          ; work         ;
+;    |debounce:inst3|         ; 0 (0)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|debounce:inst3         ; debounce          ; work         ;
+;    |debounce:inst4|         ; 1 (1)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|debounce:inst4         ; debounce          ; work         ;
+;    |decoder:inst10|         ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|decoder:inst10         ; decoder           ; work         ;
+;    |decoder:inst11|         ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|decoder:inst11         ; decoder           ; work         ;
+;    |decoder:inst9|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|decoder:inst9          ; decoder           ; work         ;
+;    |shift_register:inst5|   ; 83 (83)             ; 39 (39)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|shift_register:inst5   ; shift_register    ; work         ;
+;    |shift_register:inst6|   ; 5 (5)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|shift_register:inst6   ; shift_register    ; work         ;
+;    |slow_clk:inst1|         ; 43 (43)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cross_correlation|slow_clk:inst1         ; slow_clk          ; work         ;
 +-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -238,50 +238,50 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+----------------------------------------+
 ; Register name                          ; Reason for Removal                     ;
 +----------------------------------------+----------------------------------------+
-; cross_correlator:inst3|hold[4][1]      ; Stuck at GND due to stuck port data_in ;
-; cross_correlator:inst3|hold[4][0]      ; Stuck at GND due to stuck port data_in ;
-; cross_correlator:inst3|hold[3][1]      ; Stuck at GND due to stuck port data_in ;
-; cross_correlator:inst3|hold[3][0]      ; Stuck at GND due to stuck port data_in ;
-; cross_correlator:inst3|hold[2][1]      ; Stuck at GND due to stuck port data_in ;
-; cross_correlator:inst3|hold[2][0]      ; Stuck at GND due to stuck port data_in ;
-; cross_correlator:inst3|hold[1][1]      ; Stuck at GND due to stuck port data_in ;
-; cross_correlator:inst3|hold[1][0]      ; Stuck at GND due to stuck port data_in ;
-; cross_correlator:inst3|hold[0][1]      ; Stuck at GND due to stuck port data_in ;
-; cross_correlator:inst3|hold[0][0]      ; Stuck at GND due to stuck port data_in ;
-; shift_register:inst2|i[31]             ; Merged with shift_register:inst1|i[31] ;
-; shift_register:inst2|i[30]             ; Merged with shift_register:inst1|i[30] ;
-; shift_register:inst2|i[29]             ; Merged with shift_register:inst1|i[29] ;
-; shift_register:inst2|i[28]             ; Merged with shift_register:inst1|i[28] ;
-; shift_register:inst2|i[27]             ; Merged with shift_register:inst1|i[27] ;
-; shift_register:inst2|i[26]             ; Merged with shift_register:inst1|i[26] ;
-; shift_register:inst2|i[25]             ; Merged with shift_register:inst1|i[25] ;
-; shift_register:inst2|i[24]             ; Merged with shift_register:inst1|i[24] ;
-; shift_register:inst2|i[23]             ; Merged with shift_register:inst1|i[23] ;
-; shift_register:inst2|i[22]             ; Merged with shift_register:inst1|i[22] ;
-; shift_register:inst2|i[21]             ; Merged with shift_register:inst1|i[21] ;
-; shift_register:inst2|i[20]             ; Merged with shift_register:inst1|i[20] ;
-; shift_register:inst2|i[19]             ; Merged with shift_register:inst1|i[19] ;
-; shift_register:inst2|i[18]             ; Merged with shift_register:inst1|i[18] ;
-; shift_register:inst2|i[17]             ; Merged with shift_register:inst1|i[17] ;
-; shift_register:inst2|i[16]             ; Merged with shift_register:inst1|i[16] ;
-; shift_register:inst2|i[15]             ; Merged with shift_register:inst1|i[15] ;
-; shift_register:inst2|i[14]             ; Merged with shift_register:inst1|i[14] ;
-; shift_register:inst2|i[13]             ; Merged with shift_register:inst1|i[13] ;
-; shift_register:inst2|i[12]             ; Merged with shift_register:inst1|i[12] ;
-; shift_register:inst2|i[11]             ; Merged with shift_register:inst1|i[11] ;
-; shift_register:inst2|i[10]             ; Merged with shift_register:inst1|i[10] ;
-; shift_register:inst2|i[9]              ; Merged with shift_register:inst1|i[9]  ;
-; shift_register:inst2|i[8]              ; Merged with shift_register:inst1|i[8]  ;
-; shift_register:inst2|i[7]              ; Merged with shift_register:inst1|i[7]  ;
-; shift_register:inst2|i[6]              ; Merged with shift_register:inst1|i[6]  ;
-; shift_register:inst2|i[5]              ; Merged with shift_register:inst1|i[5]  ;
-; shift_register:inst2|i[4]              ; Merged with shift_register:inst1|i[4]  ;
-; shift_register:inst2|i[3]              ; Merged with shift_register:inst1|i[3]  ;
-; shift_register:inst2|i[2]              ; Merged with shift_register:inst1|i[2]  ;
-; shift_register:inst2|i[1]              ; Merged with shift_register:inst1|i[1]  ;
-; shift_register:inst2|i[0]              ; Merged with shift_register:inst1|i[0]  ;
-; cross_correlator:inst3|out0[1]         ; Stuck at GND due to stuck port data_in ;
-; cross_correlator:inst3|out4[1]         ; Stuck at GND due to stuck port data_in ;
+; cross_correlator:inst7|hold[4][1]      ; Stuck at GND due to stuck port data_in ;
+; cross_correlator:inst7|hold[4][0]      ; Stuck at GND due to stuck port data_in ;
+; cross_correlator:inst7|hold[3][1]      ; Stuck at GND due to stuck port data_in ;
+; cross_correlator:inst7|hold[3][0]      ; Stuck at GND due to stuck port data_in ;
+; cross_correlator:inst7|hold[2][1]      ; Stuck at GND due to stuck port data_in ;
+; cross_correlator:inst7|hold[2][0]      ; Stuck at GND due to stuck port data_in ;
+; cross_correlator:inst7|hold[1][1]      ; Stuck at GND due to stuck port data_in ;
+; cross_correlator:inst7|hold[1][0]      ; Stuck at GND due to stuck port data_in ;
+; cross_correlator:inst7|hold[0][1]      ; Stuck at GND due to stuck port data_in ;
+; cross_correlator:inst7|hold[0][0]      ; Stuck at GND due to stuck port data_in ;
+; shift_register:inst6|i[31]             ; Merged with shift_register:inst5|i[31] ;
+; shift_register:inst6|i[30]             ; Merged with shift_register:inst5|i[30] ;
+; shift_register:inst6|i[29]             ; Merged with shift_register:inst5|i[29] ;
+; shift_register:inst6|i[28]             ; Merged with shift_register:inst5|i[28] ;
+; shift_register:inst6|i[27]             ; Merged with shift_register:inst5|i[27] ;
+; shift_register:inst6|i[26]             ; Merged with shift_register:inst5|i[26] ;
+; shift_register:inst6|i[25]             ; Merged with shift_register:inst5|i[25] ;
+; shift_register:inst6|i[24]             ; Merged with shift_register:inst5|i[24] ;
+; shift_register:inst6|i[23]             ; Merged with shift_register:inst5|i[23] ;
+; shift_register:inst6|i[22]             ; Merged with shift_register:inst5|i[22] ;
+; shift_register:inst6|i[21]             ; Merged with shift_register:inst5|i[21] ;
+; shift_register:inst6|i[20]             ; Merged with shift_register:inst5|i[20] ;
+; shift_register:inst6|i[19]             ; Merged with shift_register:inst5|i[19] ;
+; shift_register:inst6|i[18]             ; Merged with shift_register:inst5|i[18] ;
+; shift_register:inst6|i[17]             ; Merged with shift_register:inst5|i[17] ;
+; shift_register:inst6|i[16]             ; Merged with shift_register:inst5|i[16] ;
+; shift_register:inst6|i[15]             ; Merged with shift_register:inst5|i[15] ;
+; shift_register:inst6|i[14]             ; Merged with shift_register:inst5|i[14] ;
+; shift_register:inst6|i[13]             ; Merged with shift_register:inst5|i[13] ;
+; shift_register:inst6|i[12]             ; Merged with shift_register:inst5|i[12] ;
+; shift_register:inst6|i[11]             ; Merged with shift_register:inst5|i[11] ;
+; shift_register:inst6|i[10]             ; Merged with shift_register:inst5|i[10] ;
+; shift_register:inst6|i[9]              ; Merged with shift_register:inst5|i[9]  ;
+; shift_register:inst6|i[8]              ; Merged with shift_register:inst5|i[8]  ;
+; shift_register:inst6|i[7]              ; Merged with shift_register:inst5|i[7]  ;
+; shift_register:inst6|i[6]              ; Merged with shift_register:inst5|i[6]  ;
+; shift_register:inst6|i[5]              ; Merged with shift_register:inst5|i[5]  ;
+; shift_register:inst6|i[4]              ; Merged with shift_register:inst5|i[4]  ;
+; shift_register:inst6|i[3]              ; Merged with shift_register:inst5|i[3]  ;
+; shift_register:inst6|i[2]              ; Merged with shift_register:inst5|i[2]  ;
+; shift_register:inst6|i[1]              ; Merged with shift_register:inst5|i[1]  ;
+; shift_register:inst6|i[0]              ; Merged with shift_register:inst5|i[0]  ;
+; cross_correlator:inst7|out0[1]         ; Stuck at GND due to stuck port data_in ;
+; cross_correlator:inst7|out4[1]         ; Stuck at GND due to stuck port data_in ;
 ; Total Number of Removed Registers = 44 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
@@ -291,9 +291,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------+---------------------------+----------------------------------------+
 ; Register name                     ; Reason for Removal        ; Registers Removed due to This Register ;
 +-----------------------------------+---------------------------+----------------------------------------+
-; cross_correlator:inst3|hold[4][1] ; Stuck at GND              ; cross_correlator:inst3|out4[1]         ;
+; cross_correlator:inst7|hold[4][1] ; Stuck at GND              ; cross_correlator:inst7|out4[1]         ;
 ;                                   ; due to stuck port data_in ;                                        ;
-; cross_correlator:inst3|hold[0][1] ; Stuck at GND              ; cross_correlator:inst3|out0[1]         ;
+; cross_correlator:inst7|hold[0][1] ; Stuck at GND              ; cross_correlator:inst7|out0[1]         ;
 ;                                   ; due to stuck port data_in ;                                        ;
 +-----------------------------------+---------------------------+----------------------------------------+
 
@@ -318,7 +318,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; shift_register:inst1|i[1]              ; 36      ;
+; shift_register:inst5|i[1]              ; 36      ;
 ; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
@@ -352,7 +352,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -362,7 +362,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Mon Jul 20 10:25:48 2020
+    Info: Processing started: Mon Jul 20 14:21:38 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Cross_correlation -c Cross_correlation
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -371,7 +371,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file cross_c
 Info (12127): Elaborating entity "Cross_correlation" for the top level hierarchy
 Warning (12125): Using design file decoder.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: decoder File: C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/decoder.sv Line: 7
-Info (12128): Elaborating entity "decoder" for hierarchy "decoder:inst4"
+Info (12128): Elaborating entity "decoder" for hierarchy "decoder:inst8"
 Warning (10240): Verilog HDL Always Construct warning at decoder.sv(12): inferring latch(es) for variable "display", which holds its previous value in one or more paths through the always construct File: C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/decoder.sv Line: 12
 Info (10041): Inferred latch for "display[0]" at decoder.sv(12) File: C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/decoder.sv Line: 12
 Info (10041): Inferred latch for "display[1]" at decoder.sv(12) File: C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/decoder.sv Line: 12
@@ -382,19 +382,19 @@ Info (10041): Inferred latch for "display[5]" at decoder.sv(12) File: C:/Users/j
 Info (10041): Inferred latch for "display[6]" at decoder.sv(12) File: C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/decoder.sv Line: 12
 Warning (12125): Using design file cross_correlator.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: cross_correlator File: C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/cross_correlator.sv Line: 8
-Info (12128): Elaborating entity "cross_correlator" for hierarchy "cross_correlator:inst3"
+Info (12128): Elaborating entity "cross_correlator" for hierarchy "cross_correlator:inst7"
 Warning (12125): Using design file shift_register.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: shift_register File: C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/shift_register.sv Line: 7
-Info (12128): Elaborating entity "shift_register" for hierarchy "shift_register:inst1"
+Info (12128): Elaborating entity "shift_register" for hierarchy "shift_register:inst5"
 Warning (12125): Using design file debounce.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: debounce File: C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/debounce.sv Line: 7
-Info (12128): Elaborating entity "debounce" for hierarchy "debounce:inst"
+Info (12128): Elaborating entity "debounce" for hierarchy "debounce:inst2"
 Warning (12125): Using design file slow_clk.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: slow_clk File: C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/slow_clk.sv Line: 7
-Info (12128): Elaborating entity "slow_clk" for hierarchy "slow_clk:inst111"
+Info (12128): Elaborating entity "slow_clk" for hierarchy "slow_clk:inst1"
 Warning (10230): Verilog HDL assignment warning at slow_clk.sv(14): truncated value with size 32 to match size of target (26) File: C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/slow_clk.sv Line: 14
+Warning (14025): LATCH primitive "decoder:inst12|display[4]" is permanently disabled File: C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/decoder.sv Line: 12
 Warning (14025): LATCH primitive "decoder:inst8|display[4]" is permanently disabled File: C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/decoder.sv Line: 12
-Warning (14025): LATCH primitive "decoder:inst4|display[4]" is permanently disabled File: C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/decoder.sv Line: 12
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "display0[5]" is stuck at VCC
     Warning (13410): Pin "display0[4]" is stuck at VCC
@@ -414,10 +414,10 @@ Info (21057): Implemented 212 device resources after synthesis - the final resou
     Info (21059): Implemented 35 output pins
     Info (21061): Implemented 173 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
-    Info: Peak virtual memory: 4754 megabytes
-    Info: Processing ended: Mon Jul 20 10:26:14 2020
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:44
+    Info: Peak virtual memory: 4751 megabytes
+    Info: Processing ended: Mon Jul 20 14:22:01 2020
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:38
 
 
 +------------------------------------------+

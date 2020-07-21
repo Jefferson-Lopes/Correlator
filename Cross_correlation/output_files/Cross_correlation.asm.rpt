@@ -1,5 +1,5 @@
 Assembler report for Cross_correlation
-Mon Jul 20 10:26:36 2020
+Mon Jul 20 14:22:33 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Jul 20 10:26:36 2020 ;
+; Assembler Status      ; Successful - Mon Jul 20 14:22:33 2020 ;
 ; Revision Name         ; Cross_correlation                     ;
 ; Top-level Entity Name ; Cross_correlation                     ;
 ; Family                ; Cyclone IV E                          ;
@@ -78,15 +78,15 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Mon Jul 20 10:26:34 2020
+    Info: Processing started: Mon Jul 20 14:22:30 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Cross_correlation -c Cross_correlation
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4696 megabytes
-    Info: Processing ended: Mon Jul 20 10:26:36 2020
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4693 megabytes
+    Info: Processing ended: Mon Jul 20 14:22:33 2020
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -162,11 +162,11 @@ module cross_correlator(in1, in2, clk, out0, out1, out2, out3, out4);
         out2 = hold[2];
         out3 = hold[3];
         out4 = hold[4];
-		hold[0] = 1'b0;
-		hold[1] = 1'b0;
-		hold[2] = 1'b0;
-		hold[3] = 1'b0;
-		hold[4] = 1'b0;
+        hold[0] = 1'b0;
+        hold[1] = 1'b0;
+        hold[2] = 1'b0;
+        hold[3] = 1'b0;
+        hold[4] = 1'b0;
    end
 endmodule
 ~~~
