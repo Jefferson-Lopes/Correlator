@@ -1,5 +1,5 @@
 Flow report for Cross_correlation
-Tue Jul 21 08:40:39 2020
+Wed Jul 22 10:34:30 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Jul 21 08:40:33 2020       ;
+; Flow Status                        ; Successful - Wed Jul 22 10:34:23 2020       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; Cross_correlation                           ;
 ; Top-level Entity Name              ; Cross_correlation                           ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/21/2020 08:39:39 ;
+; Start date & time ; 07/22/2020 10:33:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Cross_correlation   ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 277375815847340.159533157916192        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 277375815847340.159542478413088        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -92,11 +92,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:29     ; 1.0                     ; 4733 MB             ; 00:00:31                           ;
-; Fitter               ; 00:00:16     ; 1.0                     ; 5273 MB             ; 00:00:11                           ;
+; Analysis & Synthesis ; 00:00:47     ; 1.0                     ; 4731 MB             ; 00:00:31                           ;
+; Fitter               ; 00:00:24     ; 1.0                     ; 5273 MB             ; 00:00:11                           ;
 ; Assembler            ; 00:00:02     ; 1.0                     ; 4692 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4770 MB             ; 00:00:03                           ;
-; Total                ; 00:00:51     ; --                      ; --                  ; 00:00:46                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 4770 MB             ; 00:00:03                           ;
+; Total                ; 00:01:18     ; --                      ; --                  ; 00:00:46                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
