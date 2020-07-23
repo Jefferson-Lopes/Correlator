@@ -2,3 +2,6 @@
 *.qws
 *.db_info
 *.flock
+
+#ignore folders
+.vscode
