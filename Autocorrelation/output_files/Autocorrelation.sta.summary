@@ -2,119 +2,119 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'debounce:inst3|ff[0]'
+Slack : -2.873
+TNS   : -94.170
+
 Type  : Slow 1200mV 85C Model Setup 'crystal'
-Slack : -2.935
-TNS   : -39.565
+Slack : -2.813
+TNS   : -39.223
 
-Type  : Slow 1200mV 85C Model Setup 'debounce:inst9|ff[0]'
-Slack : -2.845
-TNS   : -90.502
+Type  : Slow 1200mV 85C Model Setup 'shift_register:inst4|clk_out'
+Slack : -1.096
+TNS   : -5.314
 
-Type  : Slow 1200mV 85C Model Setup 'shift_register:inst1|clk_out'
-Slack : -1.458
-TNS   : -7.027
+Type  : Slow 1200mV 85C Model Setup 'slow_clk:inst1|clk_out'
+Slack : -0.357
+TNS   : -0.357
 
-Type  : Slow 1200mV 85C Model Setup 'slow_clk:inst|clk_out'
-Slack : -0.367
-TNS   : -0.367
-
-Type  : Slow 1200mV 85C Model Hold 'debounce:inst9|ff[0]'
-Slack : 0.358
+Type  : Slow 1200mV 85C Model Hold 'slow_clk:inst1|clk_out'
+Slack : 0.295
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'crystal'
 Slack : 0.390
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'slow_clk:inst|clk_out'
-Slack : 0.400
+Type  : Slow 1200mV 85C Model Hold 'debounce:inst3|ff[0]'
+Slack : 0.527
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'shift_register:inst1|clk_out'
-Slack : 1.585
+Type  : Slow 1200mV 85C Model Hold 'shift_register:inst4|clk_out'
+Slack : 1.170
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'crystal'
 Slack : -3.000
 TNS   : -30.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce:inst9|ff[0]'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce:inst3|ff[0]'
 Slack : -1.000
 TNS   : -39.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'slow_clk:inst|clk_out'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'slow_clk:inst1|clk_out'
 Slack : -1.000
 TNS   : -6.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'shift_register:inst1|clk_out'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'shift_register:inst4|clk_out'
 Slack : -1.000
 TNS   : -5.000
 
+Type  : Slow 1200mV 0C Model Setup 'debounce:inst3|ff[0]'
+Slack : -2.491
+TNS   : -80.603
+
 Type  : Slow 1200mV 0C Model Setup 'crystal'
-Slack : -2.566
-TNS   : -32.048
+Slack : -2.454
+TNS   : -32.030
 
-Type  : Slow 1200mV 0C Model Setup 'debounce:inst9|ff[0]'
-Slack : -2.501
-TNS   : -77.183
+Type  : Slow 1200mV 0C Model Setup 'shift_register:inst4|clk_out'
+Slack : -0.889
+TNS   : -4.299
 
-Type  : Slow 1200mV 0C Model Setup 'shift_register:inst1|clk_out'
-Slack : -1.260
-TNS   : -6.083
+Type  : Slow 1200mV 0C Model Setup 'slow_clk:inst1|clk_out'
+Slack : -0.229
+TNS   : -0.229
 
-Type  : Slow 1200mV 0C Model Setup 'slow_clk:inst|clk_out'
-Slack : -0.263
-TNS   : -0.263
-
-Type  : Slow 1200mV 0C Model Hold 'debounce:inst9|ff[0]'
-Slack : 0.311
+Type  : Slow 1200mV 0C Model Hold 'slow_clk:inst1|clk_out'
+Slack : 0.271
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'crystal'
 Slack : 0.347
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'slow_clk:inst|clk_out'
-Slack : 0.361
+Type  : Slow 1200mV 0C Model Hold 'debounce:inst3|ff[0]'
+Slack : 0.478
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'shift_register:inst1|clk_out'
-Slack : 1.484
+Type  : Slow 1200mV 0C Model Hold 'shift_register:inst4|clk_out'
+Slack : 1.058
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'crystal'
 Slack : -3.000
 TNS   : -30.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce:inst9|ff[0]'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce:inst3|ff[0]'
 Slack : -1.000
 TNS   : -39.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'slow_clk:inst|clk_out'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'slow_clk:inst1|clk_out'
 Slack : -1.000
 TNS   : -6.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'shift_register:inst1|clk_out'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'shift_register:inst4|clk_out'
 Slack : -1.000
 TNS   : -5.000
 
+Type  : Fast 1200mV 0C Model Setup 'debounce:inst3|ff[0]'
+Slack : -1.235
+TNS   : -36.317
+
 Type  : Fast 1200mV 0C Model Setup 'crystal'
-Slack : -1.207
-TNS   : -11.102
+Slack : -1.177
+TNS   : -10.986
 
-Type  : Fast 1200mV 0C Model Setup 'debounce:inst9|ff[0]'
-Slack : -1.172
-TNS   : -33.560
+Type  : Fast 1200mV 0C Model Setup 'shift_register:inst4|clk_out'
+Slack : -0.155
+TNS   : -0.690
 
-Type  : Fast 1200mV 0C Model Setup 'shift_register:inst1|clk_out'
-Slack : -0.618
-TNS   : -2.928
+Type  : Fast 1200mV 0C Model Setup 'slow_clk:inst1|clk_out'
+Slack : -0.085
+TNS   : -0.085
 
-Type  : Fast 1200mV 0C Model Setup 'slow_clk:inst|clk_out'
-Slack : -0.078
-TNS   : -0.078
-
-Type  : Fast 1200mV 0C Model Hold 'debounce:inst9|ff[0]'
+Type  : Fast 1200mV 0C Model Hold 'slow_clk:inst1|clk_out'
 Slack : 0.186
 TNS   : 0.000
 
@@ -122,27 +122,27 @@ Type  : Fast 1200mV 0C Model Hold 'crystal'
 Slack : 0.205
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'slow_clk:inst|clk_out'
-Slack : 0.208
+Type  : Fast 1200mV 0C Model Hold 'debounce:inst3|ff[0]'
+Slack : 0.258
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'shift_register:inst1|clk_out'
-Slack : 1.104
+Type  : Fast 1200mV 0C Model Hold 'shift_register:inst4|clk_out'
+Slack : 0.610
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'crystal'
 Slack : -3.000
-TNS   : -31.482
+TNS   : -31.469
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce:inst9|ff[0]'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce:inst3|ff[0]'
 Slack : -1.000
 TNS   : -39.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'slow_clk:inst|clk_out'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'slow_clk:inst1|clk_out'
 Slack : -1.000
 TNS   : -6.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'shift_register:inst1|clk_out'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'shift_register:inst4|clk_out'
 Slack : -1.000
 TNS   : -5.000
 

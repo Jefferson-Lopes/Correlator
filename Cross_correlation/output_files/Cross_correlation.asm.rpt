@@ -1,5 +1,5 @@
 Assembler report for Cross_correlation
-Sun Jun 21 15:15:20 2020
+Wed Jul 22 10:34:23 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/jeff7/Documents/HDL/Verilog/Cross_correlation/output_files/Cross_correlation.sof
+  5. Assembler Device Options: C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/output_files/Cross_correlation.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Jun 21 15:15:20 2020 ;
+; Assembler Status      ; Successful - Wed Jul 22 10:34:23 2020 ;
 ; Revision Name         ; Cross_correlation                     ;
 ; Top-level Entity Name ; Cross_correlation                     ;
 ; Family                ; Cyclone IV E                          ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+-------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                 ;
-+-------------------------------------------------------------------------------------------+
-; File Name                                                                                 ;
-+-------------------------------------------------------------------------------------------+
-; C:/Users/jeff7/Documents/HDL/Verilog/Cross_correlation/output_files/Cross_correlation.sof ;
-+-------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                       ;
++-------------------------------------------------------------------------------------------------+
+; File Name                                                                                       ;
++-------------------------------------------------------------------------------------------------+
+; C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/output_files/Cross_correlation.sof ;
++-------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/jeff7/Documents/HDL/Verilog/Cross_correlation/output_files/Cross_correlation.sof ;
-+----------------+----------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                            ;
-+----------------+----------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x001467CE                                                                                         ;
-; Checksum       ; 0x001467CE                                                                                         ;
-+----------------+----------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/jeff7/Documents/GitHub/Correlator/Cross_correlation/output_files/Cross_correlation.sof ;
++----------------+----------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                  ;
++----------------+----------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x0014BF82                                                                                               ;
+; Checksum       ; 0x0014BF82                                                                                               ;
++----------------+----------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sun Jun 21 15:15:18 2020
+    Info: Processing started: Wed Jul 22 10:34:21 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Cross_correlation -c Cross_correlation
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4694 megabytes
-    Info: Processing ended: Sun Jun 21 15:15:20 2020
+    Info: Peak virtual memory: 4693 megabytes
+    Info: Processing ended: Wed Jul 22 10:34:23 2020
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

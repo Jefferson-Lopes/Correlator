@@ -3,11 +3,74 @@
 ## Top-level entity
 ![](../Output_files/Autocorrelation.png)
 
-This entity was assembled in a .BDF file from other blocks, such as ***Shift Register***, ***Autocorrelator***, and ***Decoder***.
+This entity was assembled in a .BDF file from other blocks, such as ***Slow Clock***, ***Debounce***, ***Shift Register***, ***Autocorrelator*** and ***Decoder***.
 
 RTL view:
 
 ![](../Output_files/Top-level-Auto.png)
+
+## Slow Clock
+
+The ***Slow Clock*** receives a 50 MHz clock input from the built-in crystal oscillator and transforms it into a 50 Hz clock output to be used on the Debounce circuit as a base clock.
+
+Verilog code:
+
+~~~verilog
+module slow_clk(clk_in, clk_out);
+    input clk_in;
+    output clk_out;
+	
+    reg [25:0] counter = 0;
+	
+    always @ (posedge clk_in) begin
+        counter <= counter + 1;
+	if (counter == 500_000) begin
+	    counter <= 0;
+	    clk_out <= ~clk_out;
+	end 
+    end
+endmodule
+~~~
+
+RTL view:
+
+![](../Output_files/SlowClock.png)
+
+## Debounce
+
+The ***Debounce*** circuit was made the avoid the bouncing effect of any mechanical button.
+
+The way it works is bypassing the input signal through three *FlipFlops* and then comparing the output of each *FlipFlop* using an *AND* logic gate. The result of the logic gate will be the output of the circuit.
+
+Verilog code:
+
+~~~verilog
+module debounce(in, clk, out);
+    input in;
+    input clk;
+    output reg out;
+	
+    reg [2:0] ff;
+	
+    always @ (posedge clk) begin
+        ff[2] = ff[1];
+        ff[1] = ff[0];
+        ff[0] = in;
+    end
+	
+    always begin
+        if (ff[0] && ff[1] && ff[2]) begin
+            out <= 1'b1;
+        end else begin
+            out <= 1'b0;
+        end
+    end
+endmodule
+~~~
+
+RTL view:
+
+![](../Output_files/Debounce.png)
 
 ## Shift Register
 
@@ -17,7 +80,12 @@ The output is released after every 3 inputs clocks.
 
 ***Clk_out*** is activated each time the output is loaded, serving as a clock for the next blocks.
 
+
+retirar 
+
 NOTE: the ***always*** block is sensitive to the falling edge of the clock because, in the FPGA used for the tests, the button used to represent the clock has a ***pull-up resistor***, keeping it in **HIGH** when not pressed.
+
+Verilog code:
 
 ~~~verilog
 module shift_register (in, clk, out, clk_out);
@@ -30,17 +98,17 @@ module shift_register (in, clk, out, clk_out);
     integer y = 0;
     reg [2:0]hold;
   
-    always @ (negedge clk) begin
-        hold[i] <= in;
+    always @ (posedge clk) begin
+        hold[i] = in;
         if (i == 1'b0) begin
-            i = 2;
+            i <= 2;
             for(y = 0; y < 3; y = y + 1) begin
-                out[y] <= hold[y];
+                out[y] = hold[y];
             end
-		clk_out <= 1;
+            clk_out = 1; 
         end else begin
             i <= i - 1;
-	    clk_out <= 0;
+            clk_out <= 0;
         end 
     end
 endmodule
@@ -57,6 +125,8 @@ This block makes the autocorrelation between the input signal with itself shifte
 The input is a 3-bit vector, which represents the serial input signal, and the outputs are 5 vectors of 2 bits each, which represent the autocorrelation in binary. 
 
 NOTE: the logic used was made in C++ and then adapted for Verilog, to facilitate the writing of ideas.
+
+Verilog code:
 
 ~~~verilog
 module autocorrelator (in, clk, out0, out1, out2, out3, out4);
@@ -100,7 +170,6 @@ module autocorrelator (in, clk, out0, out1, out2, out3, out4);
 	out3 = hold2[3];
 	out4 = hold2[4];
     end
-
 endmodule
 ~~~
 
@@ -114,6 +183,8 @@ The ***Decoder*** is used to transform the output in bits from the ***Autocorrel
 
 For each 2-bit output of the ***Autocorrelator***, one ***Decoder*** is used.
 
+Verilog code:
+
 ~~~verilog
 module decoder(in, display);
     input [1:0] in;
@@ -125,16 +196,15 @@ module decoder(in, display);
             display <= 7'b1111110;         // abcdef0
        
         end else if (in == 2'b01) begin    // 1
-  	    display <= 7'b0110000;         // 0bc0000
+            display <= 7'b0110000;         // 0bc0000
        
         end else if (in == 2'b10) begin    // 2
-  	    display <= 7'b1101101;         // ab0de0g
+            display <= 7'b1101101;         // ab0de0g
        
         end else if (in == 2'b11) begin    // 3
-  	    display <= 7'b1111001;         // abcd00g  
+            display <= 7'b1111001;         // abcd00g  
         end
     end
-
 endmodule
 ~~~
 

@@ -1,5 +1,5 @@
 Flow report for Cross_correlation
-Sun Jun 21 15:15:24 2020
+Wed Jul 22 10:34:30 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Jun 21 15:15:20 2020       ;
+; Flow Status                        ; Successful - Wed Jul 22 10:34:23 2020       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; Cross_correlation                           ;
 ; Top-level Entity Name              ; Cross_correlation                           ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 119 / 22,320 ( < 1 % )                      ;
-;     Total combinational functions  ; 110 / 22,320 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 55 / 22,320 ( < 1 % )                       ;
-; Total registers                    ; 55                                          ;
-; Total pins                         ; 38 / 154 ( 25 % )                           ;
+; Total logic elements               ; 172 / 22,320 ( < 1 % )                      ;
+;     Total combinational functions  ; 151 / 22,320 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 89 / 22,320 ( < 1 % )                       ;
+; Total registers                    ; 89                                          ;
+; Total pins                         ; 39 / 154 ( 25 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/21/2020 15:14:55 ;
+; Start date & time ; 07/22/2020 10:33:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Cross_correlation   ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 277375815847340.159276329507216        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 277375815847340.159542478413088        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -92,11 +92,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4736 MB             ; 00:00:28                           ;
-; Fitter               ; 00:00:08     ; 1.0                     ; 5273 MB             ; 00:00:09                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4693 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4768 MB             ; 00:00:02                           ;
-; Total                ; 00:00:25     ; --                      ; --                  ; 00:00:40                           ;
+; Analysis & Synthesis ; 00:00:47     ; 1.0                     ; 4731 MB             ; 00:00:31                           ;
+; Fitter               ; 00:00:24     ; 1.0                     ; 5273 MB             ; 00:00:11                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4692 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 4770 MB             ; 00:00:03                           ;
+; Total                ; 00:01:18     ; --                      ; --                  ; 00:00:46                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
