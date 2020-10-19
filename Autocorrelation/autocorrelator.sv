@@ -20,7 +20,6 @@ module autocorrelator (in, clk, out0, out1, out2, out3, out4);
    integer diffe;
    integer y;
   
-  
    always @ (posedge clk) begin
       for(i = 0; i < 5; i = i+1) begin
          hold = 0;
@@ -28,7 +27,7 @@ module autocorrelator (in, clk, out0, out1, out2, out3, out4);
        
          if(i < 3) begin
             diffe = 2 - i;
-            for(y = 0; y <= i; y = y + 1) begin
+            for (y = 0; y <= i; y = y + 1) begin
                hold = hold + (in[y] * in[diffe]);
                diffe = diffe + 1;
             end

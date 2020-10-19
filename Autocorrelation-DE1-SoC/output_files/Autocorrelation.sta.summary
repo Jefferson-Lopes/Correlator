@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'shift_register:inst|clk_out'
+Slack : -12.973
+TNS   : -65.622
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -5.883
+TNS   : -172.955
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.335
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'shift_register:inst|clk_out'
+Slack : 5.240
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'shift_register:inst|clk_out'
+Slack : -2.225
+TNS   : -13.350
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -32.034
+
+Type  : Slow 1100mV 0C Model Setup 'shift_register:inst|clk_out'
+Slack : -12.886
+TNS   : -64.832
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -5.915
+TNS   : -167.354
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.389
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'shift_register:inst|clk_out'
+Slack : 5.189
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'shift_register:inst|clk_out'
+Slack : -2.225
+TNS   : -13.350
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -32.805
+
+Type  : Fast 1100mV 85C Model Setup 'shift_register:inst|clk_out'
+Slack : -7.175
+TNS   : -36.768
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -2.869
+TNS   : -73.794
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'shift_register:inst|clk_out'
+Slack : 3.333
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'shift_register:inst|clk_out'
+Slack : -1.702
+TNS   : -10.212
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.418
+TNS   : -18.482
+
+Type  : Fast 1100mV 0C Model Setup 'shift_register:inst|clk_out'
+Slack : -6.898
+TNS   : -35.362
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -2.758
+TNS   : -64.057
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'shift_register:inst|clk_out'
+Slack : 3.239
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'shift_register:inst|clk_out'
+Slack : -1.702
+TNS   : -10.212
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.466
+TNS   : -18.107
+
+------------------------------------------------------------

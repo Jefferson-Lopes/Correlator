@@ -11,7 +11,7 @@ module debounce(in, clk, out);
 	
 	reg [2:0] ff;
 	
-	always @ (posedge clk) begin
+	always @ (negedge clk) begin
 		ff[2] = ff[1];
 		ff[1] = ff[0];
 		ff[0] = in;
